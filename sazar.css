@@ -1,0 +1,22 @@
+.body{
+	background-color: #fffbf3 !important;
+}
+.navbar,.navbar-inverse,.navbar-header
+{
+	background-colour: transparent ;
+}
+
+.welcome{
+	width:100%;
+	height:100vh;
+	display:flex;
+	allign-items:left;
+	justify-content: center;
+}
+
+.hello{
+	width:auto;
+	height: auto;
+	left: 10%;
+	
+}
