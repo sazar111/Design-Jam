@@ -4,40 +4,64 @@
 <link href="sazar.css" rel="stylesheet" type="text/css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	
- 
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="aos.js"></script>
-	 <script> AOS.init({
-			 duration:20000
-		 })
-	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
 <script type="text/javascript" src="loading-bar.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css"/>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 <title>ADHITHYAN</title>
+
+	
+
+	
 	
 	<style>
+html {
+  scroll-behavior: smooth;
+}	
+		
 body {
   font: 400 15px Lato, sans-serif !important;
   line-height: 1.8;
- 
+ background-image: url("bg.webm") ;
 }
 .s1{
     color: #818181;
     background-color: black;
 		}
   h1 {
+	  font-family:Impact, Charcoal, sans-serif;
     font-size: 90px;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
+h2 {font-family:Impact, Charcoal, sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+h3 {font-family:Comic Sans MS, cursive, sans-serif; 
+	color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+		
   h4 {
+	  font-family:Comic Sans MS, cursive, sans-serif; 
+	  color: white;
     font-size: 19px;
     line-height: 1.375em;
     color: #303030;
@@ -62,9 +86,41 @@ body {
 .n1{transition: 2s;}
 
 .n1 :hover{
-	background-color: black;
+	background-color:aliceblue;
+	color: white;
 	transition: 2s;
 		}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 		
 .center {
   display: block;
@@ -80,6 +136,13 @@ body {
     h1 {
         font-size: 50px;
     }
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 30px;
+	}
+	
 }
 	
 ::-webkit-scrollbar
@@ -134,14 +197,47 @@ body {
 			background: linear-gradient(to top,#008aff,#00ffe7);
 			filter:blur(30px);
 		}
+		.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+		@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/LC4u_jU27qpsdszDEgeU_3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+30-39;
+}
+		.ldBar{
+			margin-left: 1%;
+		}
+		.stat{
+			margin-left: 10%;
+			margin-top: 10%;
+		}
+		hr.dashed {
+    border-top: 4px dashed white;
+}
+		
+		.skl-img{
+			margin-left:10%;
+		}	
+		
+		
 
+		
+		
+		
 </style>
+	
+ 
 </head>
 
 <body>
 	<div id="progressbar"></div>
 	<div id="scrollPath"></div>
-	<nav class="navbar navbar-default navbar-expand-xl navbar-fixed-top">
+	<nav class="main navbar navbar-default navbar-expand-xl navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -153,17 +249,17 @@ body {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right strong n1">
-        <li class="active "><a href="#">Home</a></li>
-		  <li ><a href="#">  About Me  </a></li>
-       <li><a href="#" >    </a></li>
-		<li><a href="#" >  Personal Projects  </a></li>
-		<li><a href="#" >  Contact Me   </a></li>
+        <li class="active "><a href="#">HOME</a></li>
+		  <li ><a href="#skill">  My Skills  </a></li>
+       
+		<li><a href="#projects" >  Projects </a></li>
+		<li><a href="#me" >  Contact Me   </a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid center-block" style=" background-color: #f4511e ;"><div class="center">
+<div class="container-fluid center-block" style="  background-color: #f4511e;"><div class="center">
 	<section style="position: relative">
 		<img src="hello.gif" class="center ld ld-bounce-in"  >
 	</section>
@@ -173,26 +269,141 @@ body {
 <div id="home" class="container-fluid s1  ">
 	<section></section> 
   <div class="row ">
-    <div class="col-sm-8 ld ld-float-ltr-in">
+    <div class="col-sm-8 " data-aos="fade-up-right">
       <h1><code>Adhithyan</code></h1><br>
-      <h1 style="font-family:Impact, Charcoal, sans-serif;  color: white ;"><b>Website and user interface designer</b></h1><br>
-      <h4 style="font-family:Comic Sans MS, cursive, sans-serif; color: white">sldslkdcsl;dkcosid jfcosijdfoisjdsi ejclmkj nio  dciu iuhi  ii kbinkjnodcsdi vdsiufh jcsdhsd cihsoihis udosdhrdnmk g vgbhnkj l,gb njmv uhnkj ftubhnjkml vgbhnjk bhnjkm  nkj nkj  vgbjhnk njm yin xctfvygbh vubhnjm tubnj vubhnj vubhn vubnij mgbj hk vbhnkjm tunjmkl tguyijmk ijmk yinjm uomk nijm mk, binmk bn nmkl, uyknjmlk sfkv soifnvsld svnsldk sodnv sdvn sdlvnsoidv svsvd</h4>
+      <h1 style=" color: white ;"><b>Website and user interface designer</b></h1><br>
+      <h4 style=" color: white">Hi there, this is Adhityan. I am currently pursuing my B.E degree in the field of computer science engineering. It's been 2 years since I have joined engineering and I have developed an
+intriguing interest towards web development. I am a Full Stack Web Developer.I also design Websites as a Freelancer. I am pretty good with designing the front end of websites and have adequate
+knowledge in HTML and CSS3 ,BS4,W3CS.I have developed many websites for various projects. I have also provided my services to other
+college students in completing their projects. I have been a part of some very good web design projects. I am eagerly looking forward to become a full stack web developer.
+</h4>
       <br>
     </div>
-   <div class="col-sm-4 ld ld-float-rtl-in">
+   <div class="col-sm-4 " data-aos="fade-up-left">
      <img src="dev.png" class=" img-fluid center"/>
   </div>
 </div>	
 	</div>
 
 
-<div class="container-fluid center-block" style=" background-color: #f4511e ;">
-	<div>
-		<h1>MY SKILLS<h1><br>
+<div id="skill" class="container-fluid center-block"  style=" background-color: #1F2833;">
+	<div > <h2 style="color: #66fcf1" data-aos="fade-right">my skills</h2></div><br>
+	
+	<div class="row stat" >	
+  		<div  class=".col-sm-4"><img data-aos="zoom-in-down" style="margin-left:-5%;" width="260" height="260"src="css.png"></div>
+ 		 <div class=".col-sm-8 " data-aos="zoom-in-up">
+		<div class="ldBar" style="width:100%;height:60px;font-size: 3.5em; color:#66fcf1 ;", data-stroke= "data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)"   data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20" data-value="95" style="content:none;"> </div>
+		</div>	
 	</div>
+	
+	
+	<br><br><br><br><br><br><br><br>
+	<hr class="dashed">
+	<div class="row stat">		
+  		<div  class=".col-sm-4"><img data-aos="zoom-in-down" style="margin-left:-5%;" width="260" height="260"src="html.webp"></div>
+ 		 <div class=".col-sm-8"  data-aos="zoom-in-up">
+		<div class="ldBar" style="width:100%;height:60px;font-size: 3.5em; color:#66fcf1 ;", data-stroke= "data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)"   data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20" data-value="40" style="content:none;"> </div>
+		</div>	
+	</div>
+	
+	
+	<br><br><br><br><br><br><br><br>
+	<hr class="dashed">
+	<div class="row stat">		
+  		<div  class=".col-sm-4"><img data-aos="zoom-in-down" style="margin-left:-5%;" width="260" height="260"src="angular.png"></div>
+ 		 <div class=".col-sm-8"  data-aos="zoom-in-up">
+		<div class="ldBar" style="color:#66fcf1; width:100%;height:60px;font-size: 3.5em;", data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)"   data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20" data-value="80" style="content:none;"> </div>
+		</div>	
+	</div>
+	
+	
+	
+	<br><br><br><br><br><br><br><br>
+	<hr class="dashed">
+	<div class="row stat">		
+  		<div  class=".col-sm-4"><img data-aos="zoom-in-down" style="margin-left:-5%;" width="260" height="260"src="js.png"></div>
+ 		 <div class=".col-sm-8"  data-aos="zoom-in-up">
+		<div class="ldBar" style="color:#66fcf1; width:100%;height:60px;font-size: 3.5em;", data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)"   data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20" data-value="95" style="content:none;"> </div>
+		</div>	
+	</div>
+	<br><br><br>
+
 </div>
 	
+
+<div id="projects" class="container-fluid text-center " style="background-color:#0b0c10;">
+  <h2 style="color:#66fcf1;" data-aos="zoom-out"  >OTHER PROJECTS</h2><br>
+  <h4 style="color:#66fcf1;"  data-aos="zoom-out">Look What I Have Done !!!</h4>
+  <div class="row text-center slideanim" style="color:black; background-color:black">
+    <div class="col-sm-4" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <div class="thumbnail">
+        <img src="ai.jfif"  width="400" height="300">
+        <p><strong>AI</strong></p>
+        <p>AI Based Project</p>
+      </div>
+    </div>
+    <div class="col-sm-4" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <div class="thumbnail">
+        <img src="ml.jpeg"  width="400" height="300">
+        <p><strong>Machine Learning </strong></p>
+        <p>ML Based Project</p>
+      </div>
+    </div>
+    <div class="col-sm-4" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <div class="thumbnail">
+        <img src="iot.jpg"  width="400" height="300">
+        <p><strong>IOT</strong></p>
+        <p>IOT Based Project</p>
+      </div>
+    </div>
+  </div>	
+</div>
 	
+<div id="me" class="container-fluid" style=" background-color: #f4511e ;">
+	<h2 class="text-center" data-aos="fade-right">Want To Work To Work Together ???</h2>
+	<img src="together.gif" class="thumbnail" style="width:100%">
+	<div id="contact" class="container-fluid bg-grey">
+  <h3 class="text-center"> THEN CONTACT ME HERE !!!</h3>
+  <div class="row">
+    <div class="col-sm-5">
+      
+      <p><span class="center"></span> G ADHITHYAN</p>
+      <p><span class="glyphicon cencerglyphicon-phone"></span> PH: 9866755578</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> sazar111@protonmail.com</p>
+		<a  href="https://www.instagram.com/sazar111/" class="
+					glyphicon center	fa fa-instagram"></a>
+		<a href="#" class="fa fa-facebook center"></a>
+    </div>
+	  <br><br>
+	  
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	
+</div>
 <script type="text/javascript">
 	let progress = document.getElementById('progressbar');
 	let totalHeight =document.body.scrollHeight-window.innerHeight;
@@ -202,5 +413,8 @@ body {
 	}
 	
 </script>  
+ <script type="text/javascript"> 
+		 AOS.init();
+	</script>
 </body>
 </html>
